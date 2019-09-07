@@ -165,7 +165,7 @@ class PlayerList extends React.Component {
 	} else {
 		playerList = this.state.playerList
 	}
-	
+
     return (
     	<Container>
 	    	<ListHead
