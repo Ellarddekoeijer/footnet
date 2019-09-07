@@ -66,7 +66,6 @@ class NewPlayer extends Component {
 				</Alert>;
 		}
 
-		console.log(messageElement, type, message);
 		//Set state to display the message
 		this.setState({
 			showMessage: true,
@@ -76,11 +75,10 @@ class NewPlayer extends Component {
 		//Hide message after three secconds
 		setTimeout(() => {
 			this.setState({showMessage: false});
-		}, 5000)
+		}, 3000)
   	}
 
 	render() {
-    	console.log(this.state.showMessage);
 		return (
 			<div className="newPlayerContainer">
 				<Row className="noMargin justify-content-md-center">

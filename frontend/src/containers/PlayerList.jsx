@@ -28,7 +28,8 @@ class PlayerList extends React.Component {
 		this.state = {
 			deleting: false,
 			playerList: [],
-			filter: ""
+			filter: "",
+			filterResult: []
 		}
 	}
 
@@ -79,8 +80,10 @@ class PlayerList extends React.Component {
 			}
 		);
 
+		console.log(playerList);
+
 		this.setState({
-			playerList: playerList
+			filterResult: playerList
 		})
 	};
 
@@ -153,6 +156,12 @@ class PlayerList extends React.Component {
 
   render() {
 	let title = this.renderTitle();
+	let playerList;
+	if (this.state.filterResult.length > 0) {
+		playerList = this.state.filterResult
+	} else {
+		playerList = this.state.playerList
+	}
     return (
     	<Container>
 	    	<ListHead
@@ -175,7 +184,7 @@ class PlayerList extends React.Component {
 	    	<List
 				deletePlayers={this.state.deleting}
 				addPlayerToSelection={this.addPlayerToSelection}
-				players={this.state.playerList}
+				players={playerList}
 			/>
     	</Container>
    	);
