@@ -1,0 +1,48 @@
+{
+	"player": {
+		"newPlayer": {
+			"showForm": false,
+			"addedPlayer": null,
+			"error": null
+		},
+		"playerSelection": {
+			"userID": "41431515",
+			"multiple": true, //Optional, when true playerIDs will be an array of user ids. When false only the userID is to be populated.
+			"userIDs": ["1", "2", "3"], //List of userIDs in selection
+		},
+		"loading": false,
+		"error": null,
+		"avatar": null
+	},
+	"choach": {
+		"coaches": [],
+		"loading": false,
+		"error": null,
+	},
+	"playerList": {
+		"players": {
+			"players[1]": {
+				"Playerobject": true
+			}
+		},
+		"loading": false,
+		"error": null
+	},
+	"modal": {
+		"show": false,
+		"title": "Modal title",
+		"body": "Modal body",
+		"buttons": {
+			"buttonA": {
+				"className": "defaultButton",
+				"value": "Button value",
+				"callback": Function () = alert("button callback");
+			},
+			"buttonB": {
+				"className": "defaultButton",
+				"value": "Button value",
+				"callback": Function () = alert("button callback");
+			}
+		}
+	}
+}

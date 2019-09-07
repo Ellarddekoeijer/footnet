@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.newPlayerForm {
+	margin: 5vh 0;
+}
+
+.playerAlert{
+	position: fixed;
+	top: 10px;
+	left: 0;
+	right: 0;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.modal-backdrop
+{
+	opacity:0.5 !important;
+}
+
+.selected {
+	background-color: #1e7e34;
+}
+
+.avatar img {
+	width: 50px;
+}
+
+.listUserInfo {
+	overflow-wrap: break-word;
+	font-size: 0.8em;
+}
+
+.listControl {
+	cursor: pointer;
+}
+
+.listItem {
+	color: white;
+}
+
+.listControl, .listControllText {
+	color: #FFFFFF;
+	font-size: 1.5em;
+}
+
+.listTitle {
+	font-size: 1.2em;
+	color: white;
+	text-align: right;
+}
+
+.closeForm {
+	cursor: pointer;
+}
+
+.closeForm {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.field {
+	background-color: #181818;
+}
+
+.listHead {
+	padding: 60px 0;
+}
+
+.defaultOption {
+	color: rgba(93, 93, 93);
+}
+
+.newPlayer {
+	transition: 0.5s;
+	max-height: 80vh;
+	overflow-y: scroll;
+	margin-top: 12vh;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding: 5vh 5vh;
+}
+
+.playerList {
+	background-color: #1D1D1D;
+	min-height: 100vh;
+}
+
+.logo {
+	width: 100%;
+}
+
+.newPlayer h4 {
+	font-size: 2.5vh;
+	margin: 50px 0;
+}
+
+.newPlayerContainer {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.imageDone {
+	font-size: 2em;
+	color: #3f8c37;
+	text-align: right;
+}
+
+.cropContainer {
+	transition: 0.5s;
+	width: 100%;
+	float: left;
+	margin: 15px 0;
+}
+
+.ReactCrop__image, .ReactCrop {
+	transition: 0.5s;
+}
+
+.ReactCrop {
+	float: left;
+}
+
+.fileUpload {
+	margin: 0 0 20px 0;
+}
+
+.crop_preview {
+	vertical-align: top;
+	margin: 0 0 0 15px;
+}
+
+input.form-control {
+	border-radius: 10px;
+	background-color: rgba(93, 93, 93, 0.12);
+	color: rgba(93, 93, 93, 0.39);
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	height: 40px;
+}
+
+select.form-control {
+	border-radius: 10px;
+	background-color: rgba(93, 93, 93, 0.12);
+	color: rgba(93, 93, 93);
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	height: 40px;
+}
+
+.form-control:focus {
+	background-color: rgba(93, 93, 93, 0.12);
+	box-shadow: none;
+}
+
+.mainContainer {
+	padding: 0;
+}
+
+.mainContainer {
+	min-height: 100vh;
+}
+
+.noMargin {
+	margin: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.defaultButton {
+	color: #fbfbff;
+	background-color: rgba(238, 117, 34, 1);
+	border-radius: 10px;
+	border: none;
+	padding: 10px 20px;
+	transition: 0.5s;
+}
+
+
+.defaultButton:hover {
+	transition: 0.5s;
+	background-color: #d6671b;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.upload-btn-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] {
+	color: white;
+	font-size: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.fade.hide {
+	transition: all 0.4s ease-out;
+	opacity: 0;
+	height: 2em;
+}
+.fade.show {
+	opacity: 1;
+}
+
+.listItem.hide {
+	padding: 0 !important;
+	height: 0;
+	margin: 0;
+}
+
+.listItem {
+	border-top: none;
+	list-style: none;
+	color: #fff;
+	line-height: 2em;
+	overflow: hidden;
+}
+
+.listItem.show {
+	border-top: 1px solid white;
+	height: auto;
+	margin: 2px 0;
+}
+
+.confirmation {
+	top: 79px;
+	left: 567px;
+	width: 867px;
+	height: 334px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border-radius: 10px;
+	opacity: 0.95;
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+}
