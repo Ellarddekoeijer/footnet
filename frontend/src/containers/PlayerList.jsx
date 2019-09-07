@@ -29,6 +29,7 @@ class PlayerList extends React.Component {
 			deleting: false,
 			playerList: [],
 			filter: "",
+			filtering: false,
 			filterResult: []
 		}
 	}
@@ -80,10 +81,10 @@ class PlayerList extends React.Component {
 			}
 		);
 
-		console.log(playerList);
 
 		this.setState({
-			filterResult: playerList
+			filterResult: playerList,
+			filtering: true
 		})
 	};
 
@@ -151,17 +152,20 @@ class PlayerList extends React.Component {
 	static getDerivedStateFromProps(newProps, prevState){
 		if(newProps.players !== prevState.playerList){
 			return ({playerList: newProps.players })
+		} else {
+			return null
 		}
 	}
 
   render() {
 	let title = this.renderTitle();
 	let playerList;
-	if (this.state.filterResult.length > 0) {
+	if (this.state.filtering) {
 		playerList = this.state.filterResult
 	} else {
 		playerList = this.state.playerList
 	}
+	
     return (
     	<Container>
 	    	<ListHead
