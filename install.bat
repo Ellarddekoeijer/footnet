@@ -5,5 +5,5 @@ call npm install
 cd "../backend"
 call npm install
 
-echo ["Installed successfully"]
-exit
+cd "../"
+echo Installed successfully
