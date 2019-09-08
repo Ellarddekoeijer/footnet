@@ -11,9 +11,6 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, './../frontend/build')));
-
 //Allow the serving of css, js and images out of the /public directory
 app.use(express.static('public'));
 
