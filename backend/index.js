@@ -15,20 +15,20 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, './../frontend/build')));
 
 //Allow the serving of css, js and images out of the /public directory
-app.use(express.static('public'))
+app.use(express.static('public'));
 
 app.use("/public", express.static(path.join(__dirname, 'public')));
 
 mongoose.set('useCreateIndex', true);
 
 //require routers
-var users = require('./routers/user.js')
-var coach = require('./routers/coach.js')
-var player = require('./routers/player.js')
+var users = require('./routers/user.js');
+var coach = require('./routers/coach.js');
+var player = require('./routers/player.js');
 
 mongoose.connect(CONNECTION_URI, {useNewUrlParser: true});
 
-app.use('/user', users)
-app.use('/coach', coach)
-app.use('/player', player)
+app.use('/user', users);
+app.use('/coach', coach);
+app.use('/player', player);
 app.listen(port, () => console.log(`Server listening on port ${port}!`))
